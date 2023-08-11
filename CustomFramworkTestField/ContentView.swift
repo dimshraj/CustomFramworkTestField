@@ -7,12 +7,15 @@
 
 import SwiftUI
 import CoreData
-
+import CustomFramework
 struct ContentView: View {
 
     var body: some View {
         NavigationView {
             Text("Hello!")
+        }
+        .onAppear() {
+            BTManager(apiKey: "someKey").start()
         }
     }
 }

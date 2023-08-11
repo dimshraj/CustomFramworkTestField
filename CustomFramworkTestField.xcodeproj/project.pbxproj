@@ -13,6 +13,7 @@
 		329153D62A864D5C007BBF35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329153D52A864D5C007BBF35 /* Preview Assets.xcassets */; };
 		329153D82A864D5C007BBF35 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329153D72A864D5C007BBF35 /* Persistence.swift */; };
 		329153DB2A864D5C007BBF35 /* CustomFramworkTestField.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 329153D92A864D5C007BBF35 /* CustomFramworkTestField.xcdatamodeld */; };
+		329153E62A86E7CE007BBF35 /* CustomFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 329153E52A86E7CE007BBF35 /* CustomFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329153E62A86E7CE007BBF35 /* CustomFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = CustomFramworkTestField;
+			packageProductDependencies = (
+				329153E52A86E7CE007BBF35 /* CustomFramework */,
+			);
 			productName = CustomFramworkTestField;
 			productReference = 329153CB2A864D5C007BBF35 /* CustomFramworkTestField.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 329153C22A864D5C007BBF35;
+			packageReferences = (
+				329153E42A86E7CE007BBF35 /* XCRemoteSwiftPackageReference "CustomFramework" */,
+			);
 			productRefGroup = 329153CC2A864D5C007BBF35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		329153E42A86E7CE007BBF35 /* XCRemoteSwiftPackageReference "CustomFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dimshraj/CustomFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		329153E52A86E7CE007BBF35 /* CustomFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329153E42A86E7CE007BBF35 /* XCRemoteSwiftPackageReference "CustomFramework" */;
+			productName = CustomFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		329153D92A864D5C007BBF35 /* CustomFramworkTestField.xcdatamodeld */ = {
